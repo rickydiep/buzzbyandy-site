@@ -1,0 +1,21 @@
+html, body{
+    height: 100%;
+    font-family: 'Raleway', sans-serif;
+}
+.bio-photo{
+    height: 100vh;
+    background-image: url("profile3.jpg");
+    background-position: center center;
+    background-size: cover;
+}
+.bio-text{
+    font-family: 'Raleway', sans-serif;
+}
+.social-item{
+    color: black;
+}
+@media screen and (max-width: 540px) {
+    .bio-section{
+        flex-direction: column;
+    }
+}
