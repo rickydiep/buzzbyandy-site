@@ -7,20 +7,38 @@ html, body{
     background-color: aqua;
     height: 100vh;
 }
+.large-view{
+    display: block;
+}
+.mobile-view{
+    display: none;
+}
 #bio{
-    height: 100vh;
+    height: 100%;
     background-image: url("bio.jpg");
     background-position: center center;
     background-size: cover;
 }
+.bioText-large{
+    padding-top: 22%;
+}
 .bio-photo{
-    height: 100vh;
+    height: 100%;
     background-image: url("profile3.jpg");
     background-position: center center;
     background-size: cover;
 }
+.black-signature{
+    display: none;
+}
+.white-signature{
+    display: block;
+}
 .bio-text{
     font-family: 'Raleway', sans-serif;
+}
+.info{
+    color: white;
 }
 .social-item{
     color: white;
@@ -67,6 +85,40 @@ html, body{
     opacity: 0.6;
     transition: 0.2s;
 }
+@media screen and (max-width: 1024px) {
+    .bioText-large{
+        padding-top: 40%;
+    }
+}
+@media screen and (max-width: 768px) {
+    .bioText-large{
+        padding-top: 45%;
+    }
+}
 @media screen and (max-width: 540px) {
+    #bio{background-image: none; background-color: white;}
+    .bioText-large{
+        padding-top:0%;
+    }
+    .bioText-large{flex-direction: column-reverse;}
+    .headshot{
+        height: 50vh;
+        background-image: url("profile3.jpg");
+        background-size: cover;
+        background-position: center center;
+    }
+    .black-signature{
+        display: block;
+    }
+    .white-signature{
+        display: none;
+    }
+    .info{padding-top: 10%; height: 100vh;}
+    .info, .social-item{color: black}
+    .social-links{justify-content: center;}
+    .info-tag{text-align: center;}
+    #instafeed:nth-child(2){
+        display: none;
+    }
 
 }
