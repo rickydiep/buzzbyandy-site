@@ -2,6 +2,11 @@ html, body{
     height: 100%;
     font-family: 'Raleway', sans-serif;
 }
+#home{
+    background-color: aqua;
+    height: 100vh;
+}
+
 .bio-photo{
     height: 100vh;
     background-image: url("profile3.jpg");
@@ -14,8 +19,47 @@ html, body{
 .social-item{
     color: black;
 }
+
+.instafeed-image-square {
+    position: relative;
+    height: 0;
+    padding-top: 100%;
+    overflow: hidden;
+  }
+  
+  .instafeed-image-square img {
+    object-fit: cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+  }
+  
+  .instafeed-image-square.with-background {
+    background-size: cover;
+    background-position: center;
+  }
+  .image-boxes {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .image-boxes  > * {
+    background: transparent;
+    border: none;
+    flex: 1;
+    margin: 0rem 1rem;
+    position: relative;
+  }
+  
+.image-box > img {
+    width: 100%;
+  }
+.image-box a div:hover{
+    opacity: 0.6;
+    transition: 0.2s;
+}
 @media screen and (max-width: 540px) {
-    .bio-section{
-        flex-direction: column;
-    }
+
 }
