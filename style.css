@@ -14,7 +14,6 @@ html, body{
     display: none;
 }
 #bio{
-    height: 100%;
     background-image: url("bio.jpg");
     background-position: center center;
     background-size: cover;
@@ -117,7 +116,7 @@ html, body{
     .info, .social-item{color: black}
     .social-links{justify-content: center;}
     .info-tag{text-align: center;}
-    #instafeed:nth-child(2){
+    #instafeed li:nth-child(n+7){
         display: none;
     }
 

@@ -2,7 +2,7 @@ $(document).ready(function(){
     var feed = new Instafeed ({
         get:"user",
         userId:"1531587193",
-        limit: 8,
+        limit: 12,
         sortBy: "most-recent",
         resolution: "standard_resolution",
         accessToken: "1531587193.1677ed0.a24077c78de34f6a9fcd7538c6fb6c98",
