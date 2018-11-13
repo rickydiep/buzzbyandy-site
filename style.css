@@ -1,12 +1,18 @@
 html, body{
     height: 100%;
     font-family: 'Raleway', sans-serif;
+    overflow-x: hidden;
 }
 #home{
     background-color: aqua;
     height: 100vh;
 }
-
+#bio{
+    height: 100vh;
+    background-image: url("bio.jpg");
+    background-position: center center;
+    background-size: cover;
+}
 .bio-photo{
     height: 100vh;
     background-image: url("profile3.jpg");
@@ -17,7 +23,7 @@ html, body{
     font-family: 'Raleway', sans-serif;
 }
 .social-item{
-    color: black;
+    color: white;
 }
 
 .instafeed-image-square {
@@ -34,6 +40,7 @@ html, body{
     width: 100%;
     left: 0;
     top: 0;
+    
   }
   
   .instafeed-image-square.with-background {
@@ -49,7 +56,7 @@ html, body{
     background: transparent;
     border: none;
     flex: 1;
-    margin: 0rem 1rem;
+    margin: 0rem 0rem;
     position: relative;
   }
   
