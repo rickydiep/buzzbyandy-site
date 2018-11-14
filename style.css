@@ -2,6 +2,7 @@ html, body{
     height: 100%;
     font-family: 'Raleway', sans-serif;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 #home{
     background-image: url("LGFG-Draft.png");
