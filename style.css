@@ -4,7 +4,7 @@ html, body{
     overflow-x: hidden;
 }
 #home{
-    background-image: url("LGFG-Draft.pngs");
+    background-image: url("LGFG-Draft.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center center;
