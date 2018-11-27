@@ -13,4 +13,12 @@ $(document).ready(function(){
     $('.nav-link').on('click', function(){
         $('#navbarNav').removeClass('show');
     });
+
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+    }
+    
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+    }
 });
