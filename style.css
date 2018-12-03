@@ -3,7 +3,7 @@ html, body{
     font-family: 'Raleway', sans-serif;
     overflow-x: hidden;
     scroll-behavior: smooth;
-    overflow-y: scroll; /* has to be scroll, not auto */
+    ; /* has to be scroll, not auto */
     -webkit-overflow-scrolling: touch;
 }
 #home{
@@ -13,6 +13,28 @@ html, body{
     background-position: center center;
     height: 100vh;
 }
+#mynav{
+    background: white;
+}
+.navbar {
+    z-index: 1000;
+    width: 100%;
+    transition: background-color 200ms linear;
+    transition: opacity 200ms linear;
+   }
+   #navContents{
+     width: 100%;
+     justify-content: space-around;
+   }
+  
+  #mainMenuItem{
+    color: black;
+    font-weight: 500;
+    transition: 0.4s;
+  } 
+  #mainMenuItem:hover{
+    color:#0086DF ;
+  }
 
 .large-view{
     display: block;
@@ -103,6 +125,16 @@ html, body{
 @media screen and (max-width: 1024px) {
     .bioText-large{
         padding-top: 30%;
+    }
+}
+@media screen and (max-width: 990px) {
+    #navContents{
+        width: 100%;
+        align-items: center;
+        background: rgb(240,240,240);
+      }
+      #mynav{
+        background:transparent;
     }
 }
 @media screen and (max-width: 768px) {
