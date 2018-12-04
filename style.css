@@ -122,6 +122,22 @@ html, body{
     background: white;
     min-height: 100vh;
 }
+
+footer{
+    background-color:black;
+    color: white;
+}
+
+footer p{
+    font-size: 0.9rem;
+}
+footer a{
+    text-decoration: none;
+    color: white;
+}
+footer a:hover{
+    text-decoration: none;
+}
 @media screen and (max-width: 1024px) {
     .bioText-large{
         padding-top: 30%;
@@ -135,6 +151,12 @@ html, body{
       }
       #mynav{
         background:transparent;
+    }
+    #contact-contents{
+        flex-direction: column;
+    }
+    #contact-contents div{
+        padding-top: 2rem;
     }
 }
 @media screen and (max-width: 768px) {
