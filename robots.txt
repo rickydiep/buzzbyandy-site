@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /file.js
+Sitemap: http://www.buzzbyandy.com/sitemap.xml
+
+
