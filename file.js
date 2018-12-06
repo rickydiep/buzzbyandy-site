@@ -9,7 +9,7 @@ $(document).ready(function(){
         scroll_start = $(this).scrollTop();
         if(scroll_start > offset.top) {
             $('#mynav').css('opacity', '1');
-            $("#mynav").css('background-color', 'red');
+            $("#mynav").css('background-color', 'white');
             } else if(scroll_start == 0){
                 $('#mynav').css('opacity', '1');
                 $('#mynav').css('background-color', 'transparent');
