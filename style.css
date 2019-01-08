@@ -7,6 +7,11 @@ html, body{
     font-family: 'Roboto', sans-serif;
     background-color: black;
 }
+a{color: white;}
+a:hover{
+    text-decoration: none;
+    color: white;
+}
 #home{
     background-image: url("cover.jpg");
     background-size: contain;
@@ -16,34 +21,19 @@ html, body{
     background-color: black;
     
 }
-#mynav{
-}
-.navbar {
-    z-index: 1000;
-    width: 100%;
-    transition: background-color 200ms linear;
-    transition: opacity 200ms linear;
-    font-family: 'Roboto', sans-serif;
-   }
-   #navContents{
-     width: 100%;
-     justify-content: space-around;
-   }
-
-  #mainMenuItem{
-    color: black;
-    font-weight: 700;
-    transition: 0.4s;
-  } 
-  #mainMenuItem:hover{
-    font-weight: 800;
-  }
-
-.large-view{
-    display: block;
-}
-.mobile-view{
+.mobile-home-button{
+    padding-top: 110%;
     display: none;
+}
+.home-button{
+    padding-top: 35%;
+}
+#home button:hover{
+    background: white;
+}
+#home button{
+    background: rgba(255,255,255,0.7);
+    border: rgba(255,255,255,0.7);
 }
 #bio{
     padding-top: 10%;
@@ -51,15 +41,16 @@ html, body{
     font-family: 'Roboto', sans-serif;
     color: white;
     text-align: center;
-    height: 100%;
+    height: 80%;
 }
 #bio .row{
     background: black;
     height: 100vh;
+    width: 100%;
+    margin: 0;
 }
 .description{
     padding-top: 35%;
-    padding-left: 20%;
 }
 #bio h1{
     font-weight: bolder;
@@ -70,29 +61,13 @@ html, body{
     font-weight: 600;
 }
 .cutting-image{
-    height: 80%;
+    height: auto;
+    width: 100%;
 }
-/* .bioText-large{
-    padding-top: 15%;
-} */
-/* .bio-photo{
-    height: 100%;
-    background-image: url("profile3.jpg");
-    background-position: center center;
-    background-size: cover;
+#gallery{
+    padding-top: 30px;
 }
-.black-signature{
-    display: none;
-}
-.white-signature{
-    display: block;
-}
-.bio-text{
-    font-family: 'Roboto', sans-serif;
-} */
-.info{
-    color: white;
-}
+
 .social-item{
     color: white;
 }
@@ -116,7 +91,6 @@ html, body{
     top: 0;
     
   }
-  
   .instafeed-image-square.with-background {
     background-size: cover;
     background-position: center;
@@ -141,10 +115,7 @@ html, body{
     opacity: 0.6;
     transition: 0.2s;
 }
-#booking{
-    background: white;
-    min-height: 100vh;
-}
+
 
 footer{
     background-color:black;
@@ -167,62 +138,66 @@ footer a:hover{
 
 }
 @media screen and (max-width: 1024px) {
-    .bioText-large{
-        padding-top: 30%;
+    .description{
+        padding-top: 23%;
     }
 }
 @media screen and (max-width: 990px) {
-    #navContents{
-        width: 100%;
-        align-items: center;
-        background: rgb(240,240,240);
-      }
-      #mynav{
-        background:transparent;
+    #home{
+     background-size: cover;
     }
-    #contact-contents{
-        flex-direction: column;
+    .description{
+        padding-top: 0%;
+        padding-bottom: 25px;
     }
-    #contact-contents div{
-        padding-top: 2rem;
+    .cutting-image {
+        height: auto;
+        width: 65%;
     }
+    #gallery{
+        padding-top: 30%;
+    }
+    .home-button{
+        padding-top: 50%;
+    }
+
 }
 @media screen and (max-width: 768px) {
-    .description{font-size: 0.8rem; }
-    .bioText-large{
-        padding-top:25%;
+    .home-button{
+        padding-top: 65%;
     }
 }
 @media screen and (max-width: 540px) {
-    #bio{background-image: none; background-color: white;}
-    .bioText-large{
-        padding-top:0%;
+    .home-button{
+        display: none;
     }
-    .bioText-large{flex-direction: column-reverse;}
-    .headshot{
-        height: 70vh;
-        background-image: url("profile3.jpg");
-        background-size: cover;
-        background-position: center center;
-    }
-    .black-signature{
+    .mobile-home-button{
         display: block;
     }
-    .white-signature{
-        display: none;
+    
+    .description{
+        padding-bottom: 5%;
     }
-    .info{padding-top: 10%;}
-    .info, .social-item{color: black}
+    #bio h1{
+        font-size: 4rem;
+    }
+    #bio h2 {
+        font-size: 1.3rem;
+    }
+    
+    .cutting-image {
+        height: auto;
+        width: 90%;
+    }
+
+    
+    
+    #gallery{
+        padding-top: 65%;
+    }
+    .social-item{color: black}
     .social-links{justify-content: center;}
-    .info-tag{text-align: center;}
-    #instafeed li:nth-child(n+7){
-        display: none;
-    }
     footer .social-item{
         color: white;
     }
 }
-@media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
-  }

@@ -34,7 +34,7 @@ $(document).ready(function(){
         sortBy: "most-recent",
         resolution: "standard_resolution",
         accessToken: "5633662768.1677ed0.29cb19df5c6e4acf97847e48a1456562",
-        template: '<li class="image-box col-lg-3 col-md-4 col-6 py-3"><a href="{{link}}" target="_blank"><div class="instafeed-image-square with-background" style="background-image:url({{image}}); width="100%"></div></a></li>'
+        template: '<li class="image-box col-lg-3  col-6 py-3"><a href="{{link}}" target="_blank"><div class="instafeed-image-square with-background" style="background-image:url({{image}}); width="100%"></div></a></li>'
     });
     feed.run();
 
